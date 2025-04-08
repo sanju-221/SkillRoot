@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Courses
+{% endblock title %}
+{% block extrn_css %}
+<link rel="stylesheet" href="{% static 'courses.css' %}">
+ {% endblock extrn_css %}
+
+{% block body %}
+<div class="courses-image">
+    <img src="{% static 'images/poster3.png' %}" alt="Poster Image" width="100%" height="700px">
+</div>
+<div class="category"><h1>Categories of Courses</h1></div>
+<div class="box">
+    <h2><strong>1. Programming & Web Development</strong></h2>
+    <ul>•	Learn popular languages like Python, Java, JavaScript, C++, and PHP.<br>
+        •	Full-stack development courses covering HTML, CSS, JavaScript, React, Node.js, and Django.<br>
+        •	Hands-on projects to build real-world applications.
+    </ul>
+</div>
+<div class="box">
+    <h2><strong>2. Artificial Intelligence & Machine Learning</strong></h2>
+    <ul>
+        •	Explore Deep Learning, Neural Networks, NLP, and AI Ethics.<br>
+        •	Courses in TensorFlow, PyTorch, and Scikit-Learn.<br>
+        •	Build AI-powered applications and predictive models.
+    </ul>
+</div>
+<div class="box">
+    <h2><strong>3. Cybersecurity & Ethical Hacking</strong></h2>
+    <ul>•	Learn the fundamentals of network security, cryptography, and ethical hacking.<br>
+        •	Hands-on training in penetration testing and cybersecurity tools.<br>
+        •	Prepare for certifications like CEH, CISSP, and CompTIA Security+.
+    </ul>
+</div>
+<div class="box">
+    <h2><strong>4. Cloud Computing & DevOps </strong></h2>
+    <ul>•    Master platforms like AWS, Microsoft Azure, and Google Cloud.<br>
+        •	Learn Docker, Kubernetes, CI/CD Pipelines, and Infrastructure as Code.<br>
+        •	Get certified in AWS Solutions Architect, Azure Fundamentals, and more.        
+    </ul>
+</div>
+<div class="box">
+    <h2><strong>5. Data Science & Big Data</strong></h2>
+    <ul>•	Learn Data Analysis, SQL, Pandas, NumPy, and Data Visualization.<br>
+        •	Master Big Data tools like Hadoop and Spark.<br>
+        •	Courses on business intelligence, data engineering, and analytics.
+    </ul>
+</div>
+<div class="box">
+    <h2><strong>6. IT Certifications & Career Development</strong></h2>
+    <ul>•	Prep courses for CCNA, PMP, ITIL, and more.<br>
+        •	Resume-building and interview preparation workshops.<br>
+        •	Career guidance from industry experts.        
+    </ul>
+</div>
+<div class="end-div">
+    <h4>Each course includes: </h4>
+    <p>✔ Duration – Ranges from 4 weeks to 6 months, depending on the topic.<br>
+        ✔ Difficulty Level – Beginner, Intermediate, and Advanced options available.<br>
+        ✔ Hands-on Projects – Real-world applications to test your skills.<br>
+        ✔ Certifications – Earn certificates to boost your resume.<br>
+        ✔ 24/7 Access – Learn anytime, anywhere, at your own pace.
+        </p>
+</div>
+{% endblock body %}

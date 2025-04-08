@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+About
+{% endblock title %}
+{% block extrn_css %}
+<link rel="stylesheet" href="{% static 'about.css' %}">
+ {% endblock extrn_css %}
+
+{% block body %}
+<div class="about-image">
+    <img src="{% static 'images/poster2.png' %}" alt="Poster Image" width="100%" height="700px">
+</div>
+<div class="mission">
+    <h1>Our Mission</h1>
+    <h2>Our mission is to make high-quality IT education accessible to everyone. <br>Whether you’re a beginner starting your journey in programming or an experienced professional looking to upskill, <br>SkillRoot offers courses and resources to meet your learning needs.</h2>
+</div>
+<div class="offer">
+    <h1>What We Offer</h1>
+    <h2><strong>•	Comprehensive IT Courses</strong> – Learn programming, cybersecurity, cloud computing, data science, AI, and more.</h2>
+    <h2><strong>•	Expert-Led Video Tutorials </strong>– Gain insights from industry professionals through interactive and engaging content.</h2>
+    <h2><strong>•	Hands-On Projects </strong>– Apply your skills in real-world scenarios to build confidence and expertise.</h2>
+    <h2><strong>•	Certification Support </strong>– Prepare for industry-recognized certifications to boost your career prospects.</h2>
+    <h2><strong>•	Community & Support </strong>– Connect with fellow learners, ask questions, and grow together.</h2>
+</div>
+<div class="mission">
+    <h1>Why Choose SkillRoot?</h1>
+        <h2>✅ Flexible Learning – Learn at your own pace, anytime, anywhere. <br>
+        ✅ Up-to-Date Content – Stay ahead with the latest trends and technologies in IT.<br>
+        ✅ Affordable & Accessible – High-quality courses at a fraction of the cost of traditional learning.<br>
+        ✅ Career Advancement – Equip yourself with job-ready skills and industry-recognized certifications.
+        </h2>
+</div>
+<div class="footers">
+    <p>&copy; 2025 Skillroot - All rights reserved.</p>
+</div>
+{% endblock body %}

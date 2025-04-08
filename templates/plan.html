@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Plans & Pricing
+{% endblock title %}
+{% block extrn_css %}
+<link rel="stylesheet" href="{% static 'plan.css' %}">
+ {% endblock extrn_css %}
+
+{% block body %}
+{% for c in category %}
+<div class="admin-div">
+    <h3>{{ c.cat_name }}</h3>
+</div>
+<div>
+    <h3 class="admin-div1">{{ c.cat_spec}}</h3>
+</div>
+{% endfor %}
+<div class="courses-image">
+    <img src="{% static 'images/poster5.png' %}" alt="Poster Image" width="100%" height="700px">
+</div>
+<div class="plan">
+    <h1>Plans & Pricing</h1>
+    <h2>At SkillRoot, we offer flexible pricing options to suit individuals, teams, and organizations.</h2>
+</div>
+<div class="container">
+    <div class="box">
+        <h2>1. Individual Plan 👤</h2>
+        <h4>💵 ₹999/month</h4>
+        <ul>
+            <li>•	Access to all courses.</li>
+            <li>•	Certification upon completion.</li>
+            <li>•	24/7 learning support.</li>
+            <li>•	Monthly live Q&A sessions.</li>
+            <li>•	🎉 First 3 Months Free for New Users!</li>
+        </ul>
+    </div>
+    
+    <div class="box">
+        <h2>2. Team Plan (Up to 20 Members) 👥</h2>
+        <h4>💵 ₹17,999/month</h4>
+        <ul>
+            <li>•	Everything in the Individual Plan.</li>
+            <li>•	Team progress tracking dashboard.</li>
+            <li>•   Goal-focused recommendations</li>
+            <li>•	Exclusive team workshops.</li>
+            <li>•	Discount on bulk enrollments.</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h2>3. Organization Plan (More than 20 Members) 🏢</h2>
+        <h4>💵 Custom Pricing (Starts at ₹45,000/month)</h4>
+        <ul>
+            <li>•	Everything in the Team Plan.</li>
+            <li>•	Dedicated account manager.</li>
+            <li>•	Custom training programs.</li>
+            <li>•	Corporate certification for employees.</li>
+            <h3>💡 Special Discounts & Offers:</h3>
+            <li>•	Annual Subscription Discounts – Save up to 20% on yearly plans.</li>
+            <li>•	Student Discounts – Up to 30% off for students.</li>
+            <li>•	Early-Bird Discounts – Special pricing for first-time learners.</li>
+        </ul>
+    </div>
+</div>
+{% endblock body %}

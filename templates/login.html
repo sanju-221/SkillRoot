@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+login
+{% endblock title %}
+{% block extrn_css %}
+<link rel="stylesheet" href="{% static 'login.css' %}">
+{% endblock extrn_css %}
+
+{% block body %}
+<div class="container">
+    <div class="login-box">
+        <h2>Login to SkillRoot</h2>
+        <form>
+            <input type="text" placeholder="Email ID / Mobile Number" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <div class="links">
+            <a href="#">Forgot Password?</a>
+            <a href="#">Create New Account</a>
+        </div>
+    </div>
+</div>
+{% endblock body %}

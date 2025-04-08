@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    {% block extrn_css %} {% endblock extrn_css %}
+    
+</head>
+<body>
+    <div class="header">
+        <h1 class="name">SkillRoot</h1>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'courses' %}">Courses</a></li>
+                <li><a href="{% url 'plans' %}">Plans & Pricing</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+                
+                
+            </ul>
+        </nav>
+        <div class="button-container">
+            <a href="{% url 'login' %}" target="_blank">
+                <button class="btn login-btn">Login</button>
+            </a>
+            <button class="btn signup-btn">Join for Free</button>
+        </div>
+    </div>
+    {% block body %} {% endblock body %}
+    
+</body>
+</html>

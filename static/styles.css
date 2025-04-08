@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.name{
+    color:rgb(255, 255, 255);
+    padding-top: 18px;
+    padding-left: 20px;
+    font-size: 38px;
+}
+.header{
+    background: linear-gradient(45deg, #490A53, #8C048B);
+    height: 80px;
+    margin: 0%;
+    padding: 0%;
+}
+.nav-list{
+    list-style: none;
+    display: flex;  /* Makes the list horizontal */
+    margin-left: 50%;
+    gap: 25px; /* Adds space between list items */
+    margin-top: -15px; /* Moves the list slightly up */
+    font-weight: bold;
+    font-size: 18px;
+}
+.nav-list a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.nav-list a:hover {
+    color: #8C048B;
+}
+.button-container {
+    display: flex;
+    margin-top: -50px;
+    gap: 20px; /* Space between buttons */
+}
+.btn {
+    padding: 8px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    
+    
+}
+
+/* Login Button */
+.login-btn {
+    margin-left: 1160px;
+    background-color: #8C048B; /* Green */
+}
+
+.login-btn:hover {
+    background-color: #490A53;
+}
+
+/* Signup Button */
+.signup-btn {
+    background-color: #8C048B; /* Blue */
+}
+
+.signup-btn:hover {
+    background-color: #490A53;
+}
+
+

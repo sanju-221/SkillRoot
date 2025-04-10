@@ -14,6 +14,7 @@
     height: 80px;
     margin: 0%;
     padding: 0%;
+    overflow: auto;
 }
 .nav-list{
     list-style: none;
@@ -46,8 +47,6 @@
     border: 1px solid #ffffff;
     cursor: pointer;
     transition: 0.3s ease-in-out;
-    
-    
 }
 
 /* Login Button */
@@ -67,6 +66,15 @@
 
 .signup-btn:hover {
     background-color: #490A53;
+}
+.foot{
+    background: linear-gradient(45deg, #490A53, #8C048B);
+    position: relative;
+    height: 50px;
+    clear: both;
+    text-align: center;
+    padding-top: 14px;
+    color: rgb(255, 255, 255);
 }
 
 

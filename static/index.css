@@ -1,4 +1,8 @@
-
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
 .navi-list{
     list-style: none;
     display: flex;  /* Makes the list horizontal */
@@ -8,16 +12,13 @@
     font-size: 18px;
     margin-left: 100px;
     margin-top: 10px;
-    
 }
 img{
     margin-top: 12px;
 }
 .banner-list{
-    background-color: rgb(255, 255, 255);
-    height: 45px;
-    margin: 0%;
-    padding: 0%;
+    height: auto;
+    
 }
  .banner-list a{
     color: rgb(0, 0, 0);
@@ -31,7 +32,6 @@ img{
 
 .details{
     color: rgb(0, 0, 0);
-    height: 300px;
     width: 100%;
     background-color: rgb(255, 255, 255);
 }
@@ -78,7 +78,6 @@ img{
 }
 .banner{
     width: auto;
-    height: 700px;
     background-color: #680368;
 }
 .h1-banner{
@@ -102,6 +101,7 @@ img{
     transition: transform 0.3s ease-in-out;
     text-align: center;
     margin-left: 50px;
+    margin-bottom: 100px;
 }
 
 /* Heading & Subheading Styling */
